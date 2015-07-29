@@ -1,8 +1,8 @@
 {
-	"name": "startapp",
-	"description": "Full-Stack JavaScript with MongoDB, Express, AngularJS, and Node.js",
+	"name": "Vidya",
+	"description": "Full-Stack JavaScript application for school management",
 	"version": "0.0.1",
-	"author": "Damian Dudziak",
+	"author": "Rajasekaran",
 	"engines": {
 		"node": "0.10.x",
 		"npm": "1.4.x"
