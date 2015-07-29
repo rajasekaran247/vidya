@@ -1,6 +1,6 @@
-<section class="content-header" data-ng-controller="ConstitutionsController">
+<section data-ng-controller="ConstitutionsController" data-ng-init="findOne()">
   <div class="row wrapper border-bottom white-bg page-heading">
-    <div class="col-lg-10">
+    <div class="col-lg-12">
       <h2>View Constitution</h2>
         <ol class="breadcrumb">
           <li>
@@ -15,11 +15,9 @@
         </ol>            
     </div>
   </div>
-</section>  
-<section class="content">
   <!-- general form elements -->
-  <div class="box box-primary" data-ng-show="((authentication.user) && (authentication.user._id == leave.user._id))">
-    <div class="box-body">
+  <div class="ibox float-e-margins"  data-ng-show="((authentication.user) && (authentication.user._id == constitution.user._id))">
+    <div class="ibox-content">    
       <div class="pull-right" >
         <a class="btn btn-primary" href="/#!/constitutions/{{constitution._id}}/edit">
           <i class="glyphicon glyphicon-edit"></i>
@@ -30,16 +28,43 @@
       </div>    
       <div class="row">
         <div class="col-md-4">
-          <dl class="dl-horizontal">
+          <dl class="dl-horizontal"> 
             
-            <dt>Constitution Name</dt><dd>{{ constitution.constitutionName }}</dd>
+                
+                 <dt>Constitution Name </dt><dd>{{ constitution.constitutionName }}</dd>
+              
             
-            <dt>Constitution Type</dt><dd>{{ constitution.constitutionType }}</dd>
+                
+                 <dt>Nature Of Constitution </dt><dd>{{ constitution.natureOfConstitution }}</dd>
+              
+            
+              
+                 <dt>Date Of Formation </dt><dd>{{ constitution.dateOfFormation | date }}</dd>
+              
+            
+                
+                 <dt>Registered Address </dt><dd>{{ constitution.registeredAddress }}</dd>
+              
+            
+                
+                 <dt>Phone Number </dt><dd>{{ constitution.phoneNumber }}</dd>
+              
+            
+                
+                 <dt>Contact Person </dt><dd>{{ constitution.contactPerson }}</dd>
+              
+            
+                
+                 <dt>Email </dt><dd>{{ constitution.email }}</dd>
+              
+            
+                
+                 <dt>Website </dt><dd>{{ constitution.website }}</dd>
+              
             
           </dl>
         </div>
       </div>
-      
-    </div><!-- /.box-body -->
-  </div><!-- /.box -->
+    </div><!-- /.ibox-content -->
+  </div><!-- /.ibox -->
 <section>

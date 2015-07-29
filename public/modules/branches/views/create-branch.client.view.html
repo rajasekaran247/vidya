@@ -1,16 +1,16 @@
-<section data-ng-controller="ConstitutionsController">
+<section data-ng-controller="BranchesController">
   <div class="row wrapper border-bottom white-bg page-heading">
     <div class="col-lg-12">
-      <h2>New Constitution</h2>
+      <h2>New Branch</h2>
         <ol class="breadcrumb">
           <li>
             <a href="#!/">Home</a>
           </li>
           <li>
-            <a href="#!/constitutions">Constitution</a>
+            <a href="#!/branches">Branch</a>
           </li>
           <li class="active">
-            <strong>New Constitution</strong>
+            <strong>New Branch</strong>
           </li> 
         </ol>            
     </div>
@@ -21,34 +21,6 @@
         <form data-ng-submit="create()" novalidate>
           <fieldset>
             <div class="row">
-            
-              <div class="col-md-3 form-group">
-                <label class="control-label" for="constitutionName">Constitution Name</label>
-                <div class="controls">
-                  <input type="Text" data-ng-model="constitutionName" id="constitutionName" class="form-control" placeholder="" required />
-                </div>
-              </div>    
-            
-              <div class="col-md-3 form-group">
-                <label class="control-label" for="natureOfConstitution">Nature Of Constitution</label>
-                <div class="controls">
-                  <input type="Text" data-ng-model="natureOfConstitution" id="natureOfConstitution" class="form-control" placeholder="" required />
-                </div>
-              </div>    
-            
-              <div class="col-md-3 form-group">
-                <label class="control-label" for="dateOfFormation">Date Of Formation</label>
-                <div class="controls">
-                  <input type="Date" data-ng-model="dateOfFormation" id="dateOfFormation" class="form-control" placeholder="" required />
-                </div>
-              </div>    
-            
-              <div class="col-md-3 form-group">
-                <label class="control-label" for="registeredAddress">Registered Address</label>
-                <div class="controls">
-                  <input type="Text" data-ng-model="registeredAddress" id="registeredAddress" class="form-control" placeholder="" required />
-                </div>
-              </div>    
             
               <div class="col-md-3 form-group">
                 <label class="control-label" for="phoneNumber">Phone Number</label>

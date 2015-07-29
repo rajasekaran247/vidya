@@ -1,16 +1,16 @@
-<section data-ng-controller="InstitutionsController">
+<section data-ng-controller="ClassRoomsController">
   <div class="row wrapper border-bottom white-bg page-heading">
     <div class="col-lg-12">
-      <h2>New Institution</h2>
+      <h2>New Classroom</h2>
         <ol class="breadcrumb">
           <li>
             <a href="#!/">Home</a>
           </li>
           <li>
-            <a href="#!/institutions">Institution</a>
+            <a href="#!/class-rooms">ClassRoom</a>
           </li>
           <li class="active">
-            <strong>New Institution</strong>
+            <strong>New Classroom</strong>
           </li> 
         </ol>            
     </div>
@@ -23,16 +23,23 @@
             <div class="row">
             
               <div class="col-md-3 form-group">
-                <label class="control-label" for="institutionName">Institution Name</label>
+                <label class="control-label" for="capacity">Capacity</label>
                 <div class="controls">
-                  <input type="Text" data-ng-model="institutionName" id="institutionName" class="form-control" placeholder="" required />
+                  <input type="Number" data-ng-model="capacity" id="capacity" class="form-control" placeholder="" required />
                 </div>
               </div>    
             
               <div class="col-md-3 form-group">
-                <label class="control-label" for="typeOfInstitution">Type Of Institution</label>
+                <label class="control-label" for="institutionAssignedTo">Institution Assigned To</label>
                 <div class="controls">
-                  <input type="Text" data-ng-model="typeOfInstitution" id="typeOfInstitution" class="form-control" placeholder="" required />
+                  <input type="Text" data-ng-model="institutionAssignedTo" id="institutionAssignedTo" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="institutionAssignedSince">Institution Assigned Since</label>
+                <div class="controls">
+                  <input type="Date" data-ng-model="institutionAssignedSince" id="institutionAssignedSince" class="form-control" placeholder="" required />
                 </div>
               </div>    
                  

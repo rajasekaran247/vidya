@@ -1,0 +1,78 @@
+<section data-ng-controller="ManagementTeamsController" data-ng-init="findOne()">
+  <div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-12">
+      <h2>View Management Team</h2>
+        <ol class="breadcrumb">
+          <li>
+            <a href="#!/">Home</a>
+          </li>
+          <li>
+            <a href="#!/management-teams">ManagementTeam</a>
+          </li>
+          <li class="active">
+            <strong>View Management Team</strong>
+          </li> 
+        </ol>            
+    </div>
+  </div>
+  <!-- general form elements -->
+  <div class="ibox float-e-margins"  data-ng-show="((authentication.user) && (authentication.user._id == managementteam.user._id))">
+    <div class="ibox-content">    
+      <div class="pull-right" >
+        <a class="btn btn-primary" href="/#!/management-teams/{{managementteam._id}}/edit">
+          <i class="glyphicon glyphicon-edit"></i>
+        </a>
+        <a class="btn btn-primary" data-ng-click="remove();">
+          <i class="glyphicon glyphicon-trash"></i>
+        </a>
+      </div>    
+      <div class="row">
+        <div class="col-md-4">
+          <dl class="dl-horizontal"> 
+            
+                
+                 <dt>Name </dt><dd>{{ managementteam.name }}</dd>
+              
+            
+                
+                 <dt>Address </dt><dd>{{ managementteam.address }}</dd>
+              
+            
+                
+                 <dt>Phone Number </dt><dd>{{ managementteam.phoneNumber }}</dd>
+              
+            
+                
+                 <dt>Designation </dt><dd>{{ managementteam.designation }}</dd>
+              
+            
+              
+                 <dt>Date Of Joining </dt><dd>{{ managementteam.dateOfJoining | date }}</dd>
+              
+            
+              
+                 <dt>Date Of Creation </dt><dd>{{ managementteam.dateOfCreation | date }}</dd>
+              
+            
+                
+                 <dt>Pan </dt><dd>{{ managementteam.pan }}</dd>
+              
+            
+                
+                 <dt>Tan </dt><dd>{{ managementteam.tan }}</dd>
+              
+            
+                
+                 <dt>Itexemption </dt><dd>{{ managementteam.itexemption }}</dd>
+              
+            
+                
+                 <dt>Registration Certificate No </dt><dd>{{ managementteam.registrationCertificateNo }}</dd>
+              
+            
+          </dl>
+        </div>
+      </div>
+    </div><!-- /.ibox-content -->
+  </div><!-- /.ibox -->
+<section>

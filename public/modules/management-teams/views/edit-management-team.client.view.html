@@ -1,0 +1,109 @@
+<section data-ng-controller="ManagementTeamsController" data-ng-init="findOne()">
+  <div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-12">
+      <h2>Update Management Team</h2>
+        <ol class="breadcrumb">
+          <li>
+            <a href="#!/">Home</a>
+          </li>
+          <li>
+            <a href="#!/management-teams">ManagementTeam</a>
+          </li>
+          <li class="active">
+            <strong>Update Management Team</strong>
+          </li> 
+        </ol>            
+    </div>
+  </div>
+  <div class="ibox float-e-margins">
+    <div class="ibox-content">
+      <div class="row">
+        <form data-ng-submit="update()" novalidate>
+          <fieldset>
+            <div class="row">
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="name">Name</label>
+                <div class="controls">
+                  <input type="Text" data-ng-model="managementteam.name" id="name" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="address">Address</label>
+                <div class="controls">
+                  <input type="Text" data-ng-model="managementteam.address" id="address" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="phoneNumber">Phone Number</label>
+                <div class="controls">
+                  <input type="Number" data-ng-model="managementteam.phoneNumber" id="phoneNumber" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="designation">Designation</label>
+                <div class="controls">
+                  <input type="Text" data-ng-model="managementteam.designation" id="designation" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="dateOfJoining">Date Of Joining</label>
+                <div class="controls">
+                  <input type="Date" data-ng-model="managementteam.dateOfJoining" id="dateOfJoining" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="dateOfCreation">Date Of Creation</label>
+                <div class="controls">
+                  <input type="Date" data-ng-model="managementteam.dateOfCreation" id="dateOfCreation" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="pan">Pan</label>
+                <div class="controls">
+                  <input type="Text" data-ng-model="managementteam.pan" id="pan" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="tan">Tan</label>
+                <div class="controls">
+                  <input type="Text" data-ng-model="managementteam.tan" id="tan" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="itexemption">Itexemption</label>
+                <div class="controls">
+                  <input type="Text" data-ng-model="managementteam.itexemption" id="itexemption" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="registrationCertificateNo">Registration Certificate No</label>
+                <div class="controls">
+                  <input type="Text" data-ng-model="managementteam.registrationCertificateNo" id="registrationCertificateNo" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+            </div>
+            <div class="row">
+              <div data-ng-show="error" class="text-danger">
+                <strong data-ng-bind="error"></strong>
+              </div>               
+              <div class="col-md-2 form-group">
+                <input type="submit" value="Update" class="btn btn-primary" />
+              </div>              
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

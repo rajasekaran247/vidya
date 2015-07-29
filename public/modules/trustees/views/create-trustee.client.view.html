@@ -1,16 +1,16 @@
-<section data-ng-controller="ConstitutionsController">
+<section data-ng-controller="TrusteesController">
   <div class="row wrapper border-bottom white-bg page-heading">
     <div class="col-lg-12">
-      <h2>New Constitution</h2>
+      <h2>New Trustee</h2>
         <ol class="breadcrumb">
           <li>
             <a href="#!/">Home</a>
           </li>
           <li>
-            <a href="#!/constitutions">Constitution</a>
+            <a href="#!/trustees">Trustee</a>
           </li>
           <li class="active">
-            <strong>New Constitution</strong>
+            <strong>New Trustee</strong>
           </li> 
         </ol>            
     </div>
@@ -23,30 +23,16 @@
             <div class="row">
             
               <div class="col-md-3 form-group">
-                <label class="control-label" for="constitutionName">Constitution Name</label>
+                <label class="control-label" for="name">Name</label>
                 <div class="controls">
-                  <input type="Text" data-ng-model="constitutionName" id="constitutionName" class="form-control" placeholder="" required />
+                  <input type="Text" data-ng-model="name" id="name" class="form-control" placeholder="" required />
                 </div>
               </div>    
             
               <div class="col-md-3 form-group">
-                <label class="control-label" for="natureOfConstitution">Nature Of Constitution</label>
+                <label class="control-label" for="address">Address</label>
                 <div class="controls">
-                  <input type="Text" data-ng-model="natureOfConstitution" id="natureOfConstitution" class="form-control" placeholder="" required />
-                </div>
-              </div>    
-            
-              <div class="col-md-3 form-group">
-                <label class="control-label" for="dateOfFormation">Date Of Formation</label>
-                <div class="controls">
-                  <input type="Date" data-ng-model="dateOfFormation" id="dateOfFormation" class="form-control" placeholder="" required />
-                </div>
-              </div>    
-            
-              <div class="col-md-3 form-group">
-                <label class="control-label" for="registeredAddress">Registered Address</label>
-                <div class="controls">
-                  <input type="Text" data-ng-model="registeredAddress" id="registeredAddress" class="form-control" placeholder="" required />
+                  <input type="Text" data-ng-model="address" id="address" class="form-control" placeholder="" required />
                 </div>
               </div>    
             
@@ -58,9 +44,30 @@
               </div>    
             
               <div class="col-md-3 form-group">
-                <label class="control-label" for="contactPerson">Contact Person</label>
+                <label class="control-label" for="designation">Designation</label>
                 <div class="controls">
-                  <input type="Text" data-ng-model="contactPerson" id="contactPerson" class="form-control" placeholder="" required />
+                  <input type="Text" data-ng-model="designation" id="designation" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="dateOfJoining">Date Of Joining</label>
+                <div class="controls">
+                  <input type="Date" data-ng-model="dateOfJoining" id="dateOfJoining" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="dateOfCeasation">Date Of Ceasation</label>
+                <div class="controls">
+                  <input type="Date" data-ng-model="dateOfCeasation" id="dateOfCeasation" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="pan">Pan</label>
+                <div class="controls">
+                  <input type="Text" data-ng-model="pan" id="pan" class="form-control" placeholder="" required />
                 </div>
               </div>    
             
@@ -72,9 +79,16 @@
               </div>    
             
               <div class="col-md-3 form-group">
-                <label class="control-label" for="website">Website</label>
+                <label class="control-label" for="fathersName">Fathers Name</label>
                 <div class="controls">
-                  <input type="Text" data-ng-model="website" id="website" class="form-control" placeholder="" required />
+                  <input type="Text" data-ng-model="fathersName" id="fathersName" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="dateOfBirth">Date Of Birth</label>
+                <div class="controls">
+                  <input type="Date" data-ng-model="dateOfBirth" id="dateOfBirth" class="form-control" placeholder="" required />
                 </div>
               </div>    
                  

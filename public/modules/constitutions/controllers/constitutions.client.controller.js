@@ -12,7 +12,19 @@ angular.module('constitutions').controller('ConstitutionsController', ['$scope',
         
         constitutionName: this.constitutionName,
         
-        constitutionType: this.constitutionType,
+        natureOfConstitution: this.natureOfConstitution,
+        
+        dateOfFormation: this.dateOfFormation,
+        
+        registeredAddress: this.registeredAddress,
+        
+        phoneNumber: this.phoneNumber,
+        
+        contactPerson: this.contactPerson,
+        
+        email: this.email,
+        
+        website: this.website,
               
         created: Date.now
   

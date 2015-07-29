@@ -1,0 +1,118 @@
+<section data-ng-controller="InfrastructuresController" data-ng-init="findOne()">
+  <div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-12">
+      <h2>View Infrastructure</h2>
+        <ol class="breadcrumb">
+          <li>
+            <a href="#!/">Home</a>
+          </li>
+          <li>
+            <a href="#!/infrastructures">Infrastructure</a>
+          </li>
+          <li class="active">
+            <strong>View Infrastructure</strong>
+          </li> 
+        </ol>            
+    </div>
+  </div>
+  <!-- general form elements -->
+  <div class="ibox float-e-margins"  data-ng-show="((authentication.user) && (authentication.user._id == infrastructure.user._id))">
+    <div class="ibox-content">    
+      <div class="pull-right" >
+        <a class="btn btn-primary" href="/#!/infrastructures/{{infrastructure._id}}/edit">
+          <i class="glyphicon glyphicon-edit"></i>
+        </a>
+        <a class="btn btn-primary" data-ng-click="remove();">
+          <i class="glyphicon glyphicon-trash"></i>
+        </a>
+      </div>    
+      <div class="row">
+        <div class="col-md-4">
+          <dl class="dl-horizontal"> 
+            
+                
+                 <dt>Leased Owned </dt><dd>{{ infrastructure.leasedOwned }}</dd>
+              
+            
+                
+                 <dt>Institution Attached To </dt><dd>{{ infrastructure.institutionAttachedTo }}</dd>
+              
+            
+                
+                 <dt>Document Number </dt><dd>{{ infrastructure.documentNumber }}</dd>
+              
+            
+                
+                 <dt>Registration Charges Paid </dt><dd>{{ infrastructure.registrationChargesPaid }}</dd>
+              
+            
+                
+                 <dt>Registration Value </dt><dd>{{ infrastructure.registrationValue }}</dd>
+              
+            
+                
+                 <dt>Stamp Duty Paid </dt><dd>{{ infrastructure.stampDutyPaid }}</dd>
+              
+            
+              
+                 <dt>Registration Date </dt><dd>{{ infrastructure.registrationDate | date }}</dd>
+              
+            
+                
+                 <dt>Description Of Property </dt><dd>{{ infrastructure.descriptionOfProperty }}</dd>
+              
+            
+                
+                 <dt>Area </dt><dd>{{ infrastructure.area }}</dd>
+              
+            
+                
+                 <dt>Unit Of Measure </dt><dd>{{ infrastructure.unitOfMeasure }}</dd>
+              
+            
+                
+                 <dt>Leased Period </dt><dd>{{ infrastructure.leasedPeriod }}</dd>
+              
+            
+                
+                 <dt>Lease Rental </dt><dd>{{ infrastructure.leaseRental }}</dd>
+              
+            
+                
+                 <dt>Lease Advance </dt><dd>{{ infrastructure.leaseAdvance }}</dd>
+              
+            
+                
+                 <dt>Lease Advance Payment Mode </dt><dd>{{ infrastructure.leaseAdvancePaymentMode }}</dd>
+              
+            
+              
+                 <dt>Lease Rent Due Date </dt><dd>{{ infrastructure.leaseRentDueDate | date }}</dd>
+              
+            
+                
+                 <dt>Lessor Name </dt><dd>{{ infrastructure.lessorName }}</dd>
+              
+            
+                
+                 <dt>Lessor Phone Number </dt><dd>{{ infrastructure.lessorPhoneNumber }}</dd>
+              
+            
+                
+                 <dt>Lessor Address </dt><dd>{{ infrastructure.lessorAddress }}</dd>
+              
+            
+                
+                 <dt>Lessor Account Number </dt><dd>{{ infrastructure.lessorAccountNumber }}</dd>
+              
+            
+                
+                 <dt>Lessor Bank Details </dt><dd>{{ infrastructure.lessorBankDetails }}</dd>
+              
+            
+          </dl>
+        </div>
+      </div>
+    </div><!-- /.ibox-content -->
+  </div><!-- /.ibox -->
+<section>

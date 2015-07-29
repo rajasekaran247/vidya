@@ -7,11 +7,21 @@ angular.module('core').run(['Menus',
     
       Menus.addMenuItem('topbar', 'System Admin', 'systemadmin', 'dropdown');
       
-      Menus.addSubMenuItem('topbar', 'systemadmin', 'Constitution', 'constitutions');
+      Menus.addSubMenuItem('topbar', 'systemadmin', 'List Institution', 'institutions');
       
-      Menus.addSubMenuItem('topbar', 'systemadmin', 'Institution', 'institutions');
+      Menus.addSubMenuItem('topbar', 'systemadmin', 'List Branch', 'branches');
       
-      Menus.addSubMenuItem('topbar', 'systemadmin', 'Owner Member', 'owner-members');
+      Menus.addSubMenuItem('topbar', 'systemadmin', 'List Trustee', 'trustees');
+      
+      Menus.addSubMenuItem('topbar', 'systemadmin', 'List Management Team', 'management-teams');
+      
+      Menus.addSubMenuItem('topbar', 'systemadmin', 'List Infrastructure', 'infrastructures');
+      
+      Menus.addSubMenuItem('topbar', 'systemadmin', 'List Building', 'buildings');
+      
+      Menus.addSubMenuItem('topbar', 'systemadmin', 'List Classroom', 'class-rooms');
+      
+      Menus.addSubMenuItem('topbar', 'systemadmin', 'List Vehicle', 'vehicles');
       
     
 	}

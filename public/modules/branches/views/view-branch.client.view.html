@@ -1,25 +1,25 @@
-<section data-ng-controller="InstitutionsController" data-ng-init="findOne()">
+<section data-ng-controller="BranchesController" data-ng-init="findOne()">
   <div class="row wrapper border-bottom white-bg page-heading">
     <div class="col-lg-12">
-      <h2>View Institution</h2>
+      <h2>View Branch</h2>
         <ol class="breadcrumb">
           <li>
             <a href="#!/">Home</a>
           </li>
           <li>
-            <a href="#!/institutions">Institution</a>
+            <a href="#!/branches">Branch</a>
           </li>
           <li class="active">
-            <strong>View Institution</strong>
+            <strong>View Branch</strong>
           </li> 
         </ol>            
     </div>
   </div>
   <!-- general form elements -->
-  <div class="ibox float-e-margins"  data-ng-show="((authentication.user) && (authentication.user._id == institution.user._id))">
+  <div class="ibox float-e-margins"  data-ng-show="((authentication.user) && (authentication.user._id == branch.user._id))">
     <div class="ibox-content">    
       <div class="pull-right" >
-        <a class="btn btn-primary" href="/#!/institutions/{{institution._id}}/edit">
+        <a class="btn btn-primary" href="/#!/branches/{{branch._id}}/edit">
           <i class="glyphicon glyphicon-edit"></i>
         </a>
         <a class="btn btn-primary" data-ng-click="remove();">
@@ -31,11 +31,19 @@
           <dl class="dl-horizontal"> 
             
                 
-                 <dt>Institution Name </dt><dd>{{ institution.institutionName }}</dd>
+                 <dt>Phone Number </dt><dd>{{ branch.phoneNumber }}</dd>
               
             
                 
-                 <dt>Type Of Institution </dt><dd>{{ institution.typeOfInstitution }}</dd>
+                 <dt>Contact Person </dt><dd>{{ branch.contactPerson }}</dd>
+              
+            
+                
+                 <dt>Email </dt><dd>{{ branch.email }}</dd>
+              
+            
+                
+                 <dt>Website </dt><dd>{{ branch.website }}</dd>
               
             
           </dl>

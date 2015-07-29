@@ -7,30 +7,10 @@ var mongoose = require('mongoose'),
 	Schema = mongoose.Schema;
 
 /**
- * Constitution Schema
+ * Branch Schema
  */
-var ConstitutionSchema = new Schema({
+var BranchSchema = new Schema({
 	
-  
-  constitutionName: {
-		type: String,
-		required: 'Please fill constitutionName name'
-	},
-  
-  natureOfConstitution: {
-		type: String,
-		required: 'Please fill natureOfConstitution name'
-	},
-  
-  dateOfFormation: {
-		type: Date,
-		required: 'Please fill dateOfFormation name'
-	},
-  
-  registeredAddress: {
-		type: String,
-		required: 'Please fill registeredAddress name'
-	},
   
   phoneNumber: {
 		type: Number,
@@ -63,4 +43,4 @@ var ConstitutionSchema = new Schema({
 	}
 });
 
-mongoose.model('Constitution', ConstitutionSchema);
+mongoose.model('Branch', BranchSchema);

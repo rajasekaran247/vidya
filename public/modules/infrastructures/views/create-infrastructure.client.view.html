@@ -1,0 +1,179 @@
+<section data-ng-controller="InfrastructuresController">
+  <div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-12">
+      <h2>New Infrastructure</h2>
+        <ol class="breadcrumb">
+          <li>
+            <a href="#!/">Home</a>
+          </li>
+          <li>
+            <a href="#!/infrastructures">Infrastructure</a>
+          </li>
+          <li class="active">
+            <strong>New Infrastructure</strong>
+          </li> 
+        </ol>            
+    </div>
+  </div>
+  <div class="ibox float-e-margins">
+    <div class="ibox-content">
+      <div class="row">
+        <form data-ng-submit="create()" novalidate>
+          <fieldset>
+            <div class="row">
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="leasedOwned">Leased Owned</label>
+                <div class="controls">
+                  <input type="Text" data-ng-model="leasedOwned" id="leasedOwned" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="institutionAttachedTo">Institution Attached To</label>
+                <div class="controls">
+                  <input type="Text" data-ng-model="institutionAttachedTo" id="institutionAttachedTo" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="documentNumber">Document Number</label>
+                <div class="controls">
+                  <input type="Text" data-ng-model="documentNumber" id="documentNumber" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="registrationChargesPaid">Registration Charges Paid</label>
+                <div class="controls">
+                  <input type="Number" data-ng-model="registrationChargesPaid" id="registrationChargesPaid" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="registrationValue">Registration Value</label>
+                <div class="controls">
+                  <input type="Number" data-ng-model="registrationValue" id="registrationValue" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="stampDutyPaid">Stamp Duty Paid</label>
+                <div class="controls">
+                  <input type="Number" data-ng-model="stampDutyPaid" id="stampDutyPaid" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="registrationDate">Registration Date</label>
+                <div class="controls">
+                  <input type="Date" data-ng-model="registrationDate" id="registrationDate" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="descriptionOfProperty">Description Of Property</label>
+                <div class="controls">
+                  <input type="Text" data-ng-model="descriptionOfProperty" id="descriptionOfProperty" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="area">Area</label>
+                <div class="controls">
+                  <input type="Number" data-ng-model="area" id="area" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="unitOfMeasure">Unit Of Measure</label>
+                <div class="controls">
+                  <input type="Text" data-ng-model="unitOfMeasure" id="unitOfMeasure" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="leasedPeriod">Leased Period</label>
+                <div class="controls">
+                  <input type="Text" data-ng-model="leasedPeriod" id="leasedPeriod" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="leaseRental">Lease Rental</label>
+                <div class="controls">
+                  <input type="Number" data-ng-model="leaseRental" id="leaseRental" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="leaseAdvance">Lease Advance</label>
+                <div class="controls">
+                  <input type="Number" data-ng-model="leaseAdvance" id="leaseAdvance" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="leaseAdvancePaymentMode">Lease Advance Payment Mode</label>
+                <div class="controls">
+                  <input type="Text" data-ng-model="leaseAdvancePaymentMode" id="leaseAdvancePaymentMode" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="leaseRentDueDate">Lease Rent Due Date</label>
+                <div class="controls">
+                  <input type="Date" data-ng-model="leaseRentDueDate" id="leaseRentDueDate" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="lessorName">Lessor Name</label>
+                <div class="controls">
+                  <input type="Text" data-ng-model="lessorName" id="lessorName" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="lessorPhoneNumber">Lessor Phone Number</label>
+                <div class="controls">
+                  <input type="Text" data-ng-model="lessorPhoneNumber" id="lessorPhoneNumber" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="lessorAddress">Lessor Address</label>
+                <div class="controls">
+                  <input type="Text" data-ng-model="lessorAddress" id="lessorAddress" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="lessorAccountNumber">Lessor Account Number</label>
+                <div class="controls">
+                  <input type="Text" data-ng-model="lessorAccountNumber" id="lessorAccountNumber" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="lessorBankDetails">Lessor Bank Details</label>
+                <div class="controls">
+                  <input type="Text" data-ng-model="lessorBankDetails" id="lessorBankDetails" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+                 
+            </div>
+            <div class="row">
+              <div data-ng-show="error" class="text-danger">
+                <strong data-ng-bind="error"></strong>
+              </div>               
+              <div class="col-md-2 form-group">
+                <input type="submit" class="btn btn-primary" />
+              </div>              
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

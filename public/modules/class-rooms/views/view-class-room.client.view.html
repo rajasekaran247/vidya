@@ -1,25 +1,25 @@
-<section data-ng-controller="InstitutionsController" data-ng-init="findOne()">
+<section data-ng-controller="ClassRoomsController" data-ng-init="findOne()">
   <div class="row wrapper border-bottom white-bg page-heading">
     <div class="col-lg-12">
-      <h2>View Institution</h2>
+      <h2>View Classroom</h2>
         <ol class="breadcrumb">
           <li>
             <a href="#!/">Home</a>
           </li>
           <li>
-            <a href="#!/institutions">Institution</a>
+            <a href="#!/class-rooms">ClassRoom</a>
           </li>
           <li class="active">
-            <strong>View Institution</strong>
+            <strong>View Classroom</strong>
           </li> 
         </ol>            
     </div>
   </div>
   <!-- general form elements -->
-  <div class="ibox float-e-margins"  data-ng-show="((authentication.user) && (authentication.user._id == institution.user._id))">
+  <div class="ibox float-e-margins"  data-ng-show="((authentication.user) && (authentication.user._id == classroom.user._id))">
     <div class="ibox-content">    
       <div class="pull-right" >
-        <a class="btn btn-primary" href="/#!/institutions/{{institution._id}}/edit">
+        <a class="btn btn-primary" href="/#!/class-rooms/{{classroom._id}}/edit">
           <i class="glyphicon glyphicon-edit"></i>
         </a>
         <a class="btn btn-primary" data-ng-click="remove();">
@@ -31,11 +31,15 @@
           <dl class="dl-horizontal"> 
             
                 
-                 <dt>Institution Name </dt><dd>{{ institution.institutionName }}</dd>
+                 <dt>Capacity </dt><dd>{{ classroom.capacity }}</dd>
               
             
                 
-                 <dt>Type Of Institution </dt><dd>{{ institution.typeOfInstitution }}</dd>
+                 <dt>Institution Assigned To </dt><dd>{{ classroom.institutionAssignedTo }}</dd>
+              
+            
+              
+                 <dt>Institution Assigned Since </dt><dd>{{ classroom.institutionAssignedSince | date }}</dd>
               
             
           </dl>

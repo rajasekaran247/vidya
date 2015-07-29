@@ -1,16 +1,16 @@
-<section data-ng-controller="InstitutionsController" data-ng-init="findOne()">
+<section data-ng-controller="VehiclesController" data-ng-init="findOne()">
   <div class="row wrapper border-bottom white-bg page-heading">
     <div class="col-lg-12">
-      <h2>Update Institution</h2>
+      <h2>Update Vehicle</h2>
         <ol class="breadcrumb">
           <li>
             <a href="#!/">Home</a>
           </li>
           <li>
-            <a href="#!/institutions">Institution</a>
+            <a href="#!/vehicles">Vehicle</a>
           </li>
           <li class="active">
-            <strong>Update Institution</strong>
+            <strong>Update Vehicle</strong>
           </li> 
         </ol>            
     </div>
@@ -23,16 +23,23 @@
             <div class="row">
             
               <div class="col-md-3 form-group">
-                <label class="control-label" for="institutionName">Institution Name</label>
+                <label class="control-label" for="rcnumber">Rcnumber</label>
                 <div class="controls">
-                  <input type="Text" data-ng-model="institution.institutionName" id="institutionName" class="form-control" placeholder="" required />
+                  <input type="Text" data-ng-model="vehicle.rcnumber" id="rcnumber" class="form-control" placeholder="" required />
                 </div>
               </div>    
             
               <div class="col-md-3 form-group">
-                <label class="control-label" for="typeOfInstitution">Type Of Institution</label>
+                <label class="control-label" for="insuranceNumber">Insurance Number</label>
                 <div class="controls">
-                  <input type="Text" data-ng-model="institution.typeOfInstitution" id="typeOfInstitution" class="form-control" placeholder="" required />
+                  <input type="Text" data-ng-model="vehicle.insuranceNumber" id="insuranceNumber" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="ownedLeased">Owned Leased</label>
+                <div class="controls">
+                  <input type="Text" data-ng-model="vehicle.ownedLeased" id="ownedLeased" class="form-control" placeholder="" required />
                 </div>
               </div>    
             

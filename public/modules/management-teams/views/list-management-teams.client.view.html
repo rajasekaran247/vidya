@@ -1,0 +1,112 @@
+<section data-ng-controller="ManagementTeamsController" data-ng-init="find()">
+  <div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-12">
+      <h2>List Management Team</h2>
+      <ol class="breadcrumb">
+        <li>
+          <a href="#!/">Home</a>
+        </li>
+        <li class="active">
+          <strong>List Management Team</strong>
+        </li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="alert alert-warning text-center" data-ng-hide="!managementteams.$resolved || managementteams.length">
+    No ManagementTeams yet, why don't you <a href="/#!/management-teams/create">create one</a>?
+  </div>  
+  <div class="ibox float-e-margins" data-ng-show="managementteams.length>0">
+    <div class="ibox-title">
+      <h5>ManagementTeams ({{managementteams.length}})</h5>
+      <div class="ibox-tools">
+        <a href="/#!/management-teams/create" class="btn btn-primary btn-xs">Create</a>
+      </div>
+    </div>
+      
+    <div class="ibox-content">
+      <div class="input-group">
+        <input type="text" ng-model="searchtext" placeholder="Search managementteam" class="input form-control">
+        <span class="input-group-btn">
+            <button type="button" class="btn btn btn-primary"> <i class="fa fa-search"></i> Search</button>
+        </span>
+      </div>
+      <div class="table-responsive">
+        <table class="table table-striped table-hover">
+          <thead>
+          <tr>
+              
+              <th>Name</th>
+              
+              <th>Address</th>
+              
+              <th>Phone Number</th>
+              
+              <th>Designation</th>
+              
+              <th>Date Of Joining</th>
+              
+              <th>Date Of Creation</th>
+              
+              <th>Pan</th>
+              
+              <th>Tan</th>
+              
+              <th>Itexemption</th>
+              
+              <th>Registration Certificate No</th>
+              
+          </tr>
+          </thead>
+          <tbody>
+          <tr data-ng-repeat="managementteam in managementteams | filter: searchtext">
+              
+                
+              <td>{{ managementteam.name }}</td>
+              
+              
+                
+              <td>{{ managementteam.address }}</td>
+              
+              
+                
+              <td>{{ managementteam.phoneNumber }}</td>
+              
+              
+                
+              <td>{{ managementteam.designation }}</td>
+              
+              
+              
+              <td>{{ managementteam.dateOfJoining | date }}</td>
+              
+              
+              
+              <td>{{ managementteam.dateOfCreation | date }}</td>
+              
+              
+                
+              <td>{{ managementteam.pan }}</td>
+              
+              
+                
+              <td>{{ managementteam.tan }}</td>
+              
+              
+                
+              <td>{{ managementteam.itexemption }}</td>
+              
+              
+                
+              <td>{{ managementteam.registrationCertificateNo }}</td>
+              
+              
+              
+              <td><a class="glyphicon glyphicon-edit" href="/#!/management-teams/{{managementteam._id}}/edit"></a></td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
