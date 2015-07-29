@@ -1,0 +1,67 @@
+<section data-ng-controller="OwnerMembersController" data-ng-init="findOne()">
+  <div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+      <h2>Update Owner Member</h2>
+        <ol class="breadcrumb">
+          <li>
+            <a href="#!/">Home</a>
+          </li>
+          <li>
+            <a href="#!/owner-members">OwnerMember</a>
+          </li>
+          <li class="active">
+            <strong>Update Owner Member</strong>
+          </li> 
+        </ol>            
+    </div>
+  </div>
+  <div class="ibox float-e-margins">
+    <div class="ibox-content">
+      <div class="row">
+        <form data-ng-submit="update()" novalidate>
+          <fieldset>
+            <div class="row">
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="ownerMemberName">Owner Member Name</label>
+                <div class="controls">
+                  <input type="Text" data-ng-model="ownermember.ownerMemberName" id="ownerMemberName" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="phoneNumber">Phone Number</label>
+                <div class="controls">
+                  <input type="Text" data-ng-model="ownermember.phoneNumber" id="phoneNumber" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="address">Address</label>
+                <div class="controls">
+                  <input type="Text" data-ng-model="ownermember.address" id="address" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="pannumber">Pannumber</label>
+                <div class="controls">
+                  <input type="Text" data-ng-model="ownermember.pannumber" id="pannumber" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+            </div>
+            <div class="row">
+              <div data-ng-show="error" class="text-danger">
+                <strong data-ng-bind="error"></strong>
+              </div>               
+              <div class="col-md-2 form-group">
+                <input type="submit" value="Update" class="btn btn-primary" />
+              </div>              
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

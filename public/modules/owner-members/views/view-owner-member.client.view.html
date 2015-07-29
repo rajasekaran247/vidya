@@ -1,0 +1,49 @@
+<section class="content-header" data-ng-controller="OwnerMembersController">
+  <div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+      <h2>View Owner Member</h2>
+        <ol class="breadcrumb">
+          <li>
+            <a href="#!/">Home</a>
+          </li>
+          <li>
+            <a href="#!/owner-members">OwnerMember</a>
+          </li>
+          <li class="active">
+            <strong>View Owner Member</strong>
+          </li> 
+        </ol>            
+    </div>
+  </div>
+</section>  
+<section class="content">
+  <!-- general form elements -->
+  <div class="box box-primary" data-ng-show="((authentication.user) && (authentication.user._id == leave.user._id))">
+    <div class="box-body">
+      <div class="pull-right" >
+        <a class="btn btn-primary" href="/#!/owner-members/{{ownermember._id}}/edit">
+          <i class="glyphicon glyphicon-edit"></i>
+        </a>
+        <a class="btn btn-primary" data-ng-click="remove();">
+          <i class="glyphicon glyphicon-trash"></i>
+        </a>
+      </div>    
+      <div class="row">
+        <div class="col-md-4">
+          <dl class="dl-horizontal">
+            
+            <dt>Owner Member Name</dt><dd>{{ ownermember.ownerMemberName }}</dd>
+            
+            <dt>Phone Number</dt><dd>{{ ownermember.phoneNumber }}</dd>
+            
+            <dt>Address</dt><dd>{{ ownermember.address }}</dd>
+            
+            <dt>Pannumber</dt><dd>{{ ownermember.pannumber }}</dd>
+            
+          </dl>
+        </div>
+      </div>
+      
+    </div><!-- /.box-body -->
+  </div><!-- /.box -->
+<section>
